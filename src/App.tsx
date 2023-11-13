@@ -1,9 +1,10 @@
+import { Header } from "./components/Header/Header";
 
 export function App() {
 
   return (
     <>
-     <strong>GitBlog</strong>
+     <Header/>
     </>
   )
 }
