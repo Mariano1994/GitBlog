@@ -1,6 +1,7 @@
 import { Header } from "./components/Header/Header";
 import "./App.css";
 import { UserInformation } from "./components/UserInformation/UserInformation";
+import { SearchBar } from "./components/SearchBar/SearchBar";
 
 export function App() {
   return (
@@ -9,6 +10,7 @@ export function App() {
       <div className="wrapper-content">
         <UserInformation />
       </div>
+      <SearchBar/>
     </>
   );
 }
