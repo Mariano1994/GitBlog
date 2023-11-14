@@ -1,4 +1,3 @@
-import { options } from "../../../../../../node_modules/prettier-plugin-tailwindcss/dist/index";
 import "./Post.css";
 
 export function Post({ post }) {

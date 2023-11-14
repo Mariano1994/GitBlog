@@ -8,7 +8,7 @@
 
 .search-bar--header {
   display: flex;
-  width: 86rem;
+  width: 102.3rem;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.2rem;
@@ -28,7 +28,7 @@ line-height: 160%
 }
 
 .search-input {
-  width: 86.4rem;
+  width: 102.3rem;
 }
 
 .search-input input {

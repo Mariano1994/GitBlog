@@ -29,6 +29,7 @@
 
 .content p {
   color: var(--base-text, #afc2d4);
+  font-size: 1.8rem;
   line-height: 160%;
 }
 
