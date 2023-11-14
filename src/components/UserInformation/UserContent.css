@@ -1,0 +1,50 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.git-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.git-link a {
+  text-decoration: none;
+  color: var(--brand-blue, #3294f8);
+  font-family: Nunito;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 160%; /* 19.2px */
+  text-transform: uppercase;
+}
+
+.title h2 {
+  color: var(--base-title, #e7edf4);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.content p {
+  color: var(--base-text, #afc2d4);
+  line-height: 160%;
+}
+
+.user-info {
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 2rem;
+  color: var(--base-subtitle, #c4d4e3);
+  line-height: 160%;
+}
+
+.user-name,
+.user-company,
+.user-fellows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
