@@ -1,11 +1,13 @@
 import './SearchBar.css'
-export function SearchBar() {
+
+export function SearchBar({posts}) {
+  const totalPosts = posts.length
   return (
     <>
       <div className="search-bar">
         <div className="search-bar--header">
           <span className="search-title"> Publicações</span>
-          <span className="search-total"> 3 Publicações</span>
+          <span className="search-total"> {totalPosts} Publicações</span>
         </div>
 
         <div className="search-input">
