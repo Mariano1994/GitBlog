@@ -29,6 +29,18 @@ line-height: 160%
 
 .search-input {
   width: 102.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.search-input button {
+  width: 10%;
+  padding: .5rem;
+  background: var(--base-span, #7B96B2);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .search-input input {
@@ -37,7 +49,7 @@ line-height: 160%
 
   border-radius: 6px;
   border: 1px solid var(--base-border, #1c2f41);
-  background: var(--base-input, #040f1a);
+  background: var(--base-input, #040f1a);`
   outline: none;
 
   color: var(--base-text, #afc2d4);
@@ -46,4 +58,10 @@ line-height: 160%
 
 .search-input input::placeholder {
   color: var(--base-label, #3a536b);
+}
+
+.create-post--button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

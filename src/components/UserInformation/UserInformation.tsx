@@ -5,6 +5,9 @@ import { UserContent } from "./UserContent";
 export function UserInformation() {
   return (
     <>
+    <div className="wrapper-content">
+
+    </div>
       <div className="user-wrapper">
         <UserAvatar />
         <div className="user-informations">

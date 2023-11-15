@@ -8,7 +8,7 @@ interface PostProps {
   publishedAt: Date;
 }
 
-export function Posts({ posts }: PostProps) {
+export function Posts({posts} : PostProps) {
   return (
     <>
       <div className="post-grid">

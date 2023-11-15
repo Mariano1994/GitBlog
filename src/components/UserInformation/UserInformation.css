@@ -1,3 +1,9 @@
+.wrapper-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .user-wrapper {
   display: flex;
   padding: 3rem 3.2rem;

@@ -1,7 +1,7 @@
-import './SearchBar.css'
+import "./SearchBar.css";
 
-export function SearchBar({posts}) {
-  const totalPosts = posts.length
+export function SearchBar({ posts }) {
+  const totalPosts = posts.length;
   return (
     <>
       <div className="search-bar">
@@ -11,10 +11,12 @@ export function SearchBar({posts}) {
         </div>
 
         <div className="search-input">
-          <input type="text" placeholder="Pesquisar conteúdo"/>
+          <input type="text" placeholder="Pesquisar conteúdo" />
+          <div className="create-post--button">
+            <button>Criar Post</button>
+          </div>
         </div>
-
-      </div>   
+      </div>
     </>
-  )
+  );
 }
