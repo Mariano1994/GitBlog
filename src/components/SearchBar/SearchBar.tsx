@@ -1,5 +1,4 @@
 import "./SearchBar.css";
-
 export function SearchBar({ posts }) {
   const totalPosts = posts.length;
   return (
@@ -13,7 +12,7 @@ export function SearchBar({ posts }) {
         <div className="search-input">
           <input type="text" placeholder="Pesquisar conteúdo" />
           <div className="create-post--button">
-            <button>Criar Post</button>
+            <button>Publicar</button>
           </div>
         </div>
       </div>
