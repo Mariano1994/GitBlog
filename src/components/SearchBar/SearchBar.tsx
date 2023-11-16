@@ -11,9 +11,7 @@ export function SearchBar({ posts }) {
 
         <div className="search-input">
           <input type="text" placeholder="Pesquisar conteúdo" />
-          <div className="create-post--button">
-            <button>Publicar</button>
-          </div>
+
         </div>
       </div>
     </>

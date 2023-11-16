@@ -12,7 +12,6 @@
 
 .posts-content:hover {
   border: 1px solid var(--base-text, #afc2d4);
-
 }
 
 .post-header {
@@ -20,12 +19,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .post-header h3 {
   color: var(--base-title, #e7edf4);
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 700;
   line-height: 160%; /* 32px */
 }
@@ -43,4 +42,17 @@
   color: var(--base-text, #afc2d4);
   font-size: 16px;
   line-height: 160%; /* 25.6px */
+  margin-bottom: 3rem;
+}
+
+.category {
+  background: var(--base-span, #7B96B2);
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-radius: 15px;
+}
+
+.category span {
+font-size: 1.1rem;
+color: var(--base-input, #040f1a);
 }

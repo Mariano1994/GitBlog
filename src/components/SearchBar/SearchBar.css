@@ -46,6 +46,7 @@ line-height: 160%
 .search-input input {
   width: 100%;
   padding: 1.2rem 1.6rem;
+  outline: none;
 
   border-radius: 6px;
   border: 1px solid var(--base-border, #1c2f41);
