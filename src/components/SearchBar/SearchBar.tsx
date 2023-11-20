@@ -1,6 +1,7 @@
 import "./SearchBar.css";
-export function SearchBar({ posts }) {
-  const totalPosts = posts.length;
+export function SearchBar({ query, onSetQuery, filteredPostList }) {
+  const totalPosts = filteredPostList.length;
+
   return (
     <>
       <div className="search-bar">
@@ -10,8 +11,12 @@ export function SearchBar({ posts }) {
         </div>
 
         <div className="search-input">
-          <input type="text" placeholder="Pesquisar conteúdo" />
-
+          <input
+            value={query}
+            onChange={onSetQuery}
+            type="search"
+            placeholder="Pesquisar conteúdo"
+          />
         </div>
       </div>
     </>

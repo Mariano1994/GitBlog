@@ -8,6 +8,7 @@ import { GitLinkIcon } from "./Icons/GitLinkIcon";
 import "./UserContent.css";
 
 export function UserContent() {
+
   const [userInfo, setInfo] = useState({
     userName: "",
     userBio: "",
@@ -32,7 +33,6 @@ export function UserContent() {
       })
       // setIsLoading(false)
     }
-    
     getUserInfo();
   }, [isLoading]);
 

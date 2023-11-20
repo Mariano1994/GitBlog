@@ -1,7 +1,6 @@
 import "./Post.css";
 
 export function Post({ post }) {
-
   return (
     <>
       <div className="posts-content">
@@ -18,10 +17,9 @@ export function Post({ post }) {
             </p>
           </div>
 
-          <div className={post.language? `category`: ''}>
+          <div className={post.language ? `category` : ""}>
             <span>{post.language?.toUpperCase()}</span>
           </div>
-
         </li>
       </div>
     </>

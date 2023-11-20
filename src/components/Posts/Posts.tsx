@@ -8,12 +8,12 @@ interface PostProps {
   publishedAt: Date;
 }
 
-export function Posts({posts} : PostProps) {
+export function Posts({ filteredPostList }: PostProps) {
   return (
     <>
       <div className="post-grid">
         <ul className="post-content--wrapper">
-          {posts.map((post) => (
+          {filteredPostList.map((post) => (
             <Post post={post} key={post.id} />
           ))}
         </ul>
