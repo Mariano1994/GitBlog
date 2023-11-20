@@ -6,8 +6,7 @@ export function EmptyMessage() {
       <div className="empty-message">
         <EmptyMessageIcon size="48" />
         <div className="empty-message-content">
-          <span> Sem publicações no momento</span>
-          <span> Crie publicações e compartilhe com outras pessoas</span>
+          <span> Loading...</span>
         </div>
       </div>
     </>

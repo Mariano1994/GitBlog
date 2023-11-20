@@ -10,11 +10,7 @@ export function Post({ post }) {
             <span> {post.created_at}</span>
           </div>
           <div className="post-content">
-            <p>
-              {post.description !== null
-                ? post.description
-                : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa officiis rerum fuga quis natus accusantium explicabo ullam voluptates atque repudiandae, a voluptatem porro quidem nesciunt facilis impedit delectus repellat?"}
-            </p>
+            <p>{post.description}</p>
           </div>
 
           <div className={post.language ? `category` : ""}>

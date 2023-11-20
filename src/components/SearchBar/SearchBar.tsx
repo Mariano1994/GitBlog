@@ -7,7 +7,10 @@ export function SearchBar({ query, onSetQuery, filteredPostList }) {
       <div className="search-bar">
         <div className="search-bar--header">
           <span className="search-title"> Publicações</span>
-          <span className="search-total"> {totalPosts} Publicações</span>
+          <span className="search-total">
+            {" "}
+            {totalPosts} {totalPosts === 1 ? "Plublicação" : "Publicações"}
+          </span>
         </div>
 
         <div className="search-input">
