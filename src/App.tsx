@@ -8,6 +8,8 @@ import { EmptyMessage } from "./components/EmptyMessage/EmptyMessage";
 export function App() {
   const [posts, setPosts] = useState([]);
   const [query, setQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   // Functon to get query fot searching
   function handleSetQuery(event) {
@@ -18,6 +20,11 @@ export function App() {
   const filteredPostList = posts.filter((post) => {
     return post.description?.toLowerCase().includes(query.toLowerCase());
   });
+
+  // Get Current Posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   useEffect(() => {
     async function getReposInfo() {
@@ -40,15 +47,11 @@ export function App() {
         posts={posts}
         query={query}
         onSetQuery={handleSetQuery}
-        filteredPostList={filteredPostList}
+        filteredPostList={currentPost}
       />
 
       {posts.length > 0 ? (
-        <Posts
-          posts={posts}
-          query={query}
-          filteredPostList={filteredPostList}
-        />
+        <Posts posts={posts} query={query} filteredPostList={currentPost} />
       ) : (
         <EmptyMessage />
       )}
