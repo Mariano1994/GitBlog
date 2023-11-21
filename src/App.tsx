@@ -27,6 +27,11 @@ export function App() {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
 
+  // Change Page
+  function paginate(pageNumber) {
+    setCurrentPage(pageNumber);
+  }
+
   useEffect(() => {
     async function getReposInfo() {
       const repos = await fetch(
@@ -57,7 +62,11 @@ export function App() {
         <EmptyMessage />
       )}
 
-      <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} />
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={posts.length}
+        paginate={paginate}
+      />
     </>
   );
 }
