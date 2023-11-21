@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.page-item {
+  padding: 0.5rem 1.5rem;
+  background-color: red;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  background: var(--base-post, #112131);
+  border: 1px solid transparent;
+}
+
+.page-item a {
+  text-decoration: none;
+  color: var(--base-span, #7b96b2);
+}
+
+.page-item:hover {
+  background: transparent;
+  border: 1px solid var(--base-text, #afc2d4);
+  color: var(--base-text, #afc2d4);
+  cursor: pointer;
+}

@@ -4,12 +4,13 @@ import { SearchBar } from "./components/SearchBar/SearchBar";
 import { Posts } from "./components/Posts/Posts";
 import { useEffect, useState } from "react";
 import { EmptyMessage } from "./components/EmptyMessage/EmptyMessage";
+import { Pagination } from "./components/Pagination/Pagination";
 
 export function App() {
   const [posts, setPosts] = useState([]);
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(10);
+  const [postsPerPage, setPostsPerPage] = useState(6);
 
   // Functon to get query fot searching
   function handleSetQuery(event) {
@@ -55,6 +56,8 @@ export function App() {
       ) : (
         <EmptyMessage />
       )}
+
+      <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} />
     </>
   );
 }
