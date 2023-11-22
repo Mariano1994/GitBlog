@@ -10,7 +10,7 @@ export function App() {
   const [posts, setPosts] = useState([]);
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(6);
+  const [postsPerPage, setPostsPerPage] = useState(4);
 
   // Functon to get query fot searching
   function handleSetQuery(event) {
@@ -25,7 +25,7 @@ export function App() {
   // Get Current Posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPost = filteredPostList.slice(indexOfFirstPost, indexOfLastPost);
 
   // Change Page
   function paginate(pageNumber) {
@@ -64,7 +64,7 @@ export function App() {
 
       <Pagination
         postsPerPage={postsPerPage}
-        totalPosts={posts.length}
+        totalPosts={filteredPostList.length}
         paginate={paginate}
       />
     </>
