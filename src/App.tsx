@@ -2,7 +2,7 @@ import { Header } from "./components/Header/Header";
 import { UserInformation } from "./components/UserInformation/UserInformation";
 import { SearchBar } from "./components/SearchBar/SearchBar";
 import { Posts } from "./components/Posts/Posts";
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { EmptyMessage } from "./components/EmptyMessage/EmptyMessage";
 import { Pagination } from "./components/Pagination/Pagination";
 
@@ -13,7 +13,7 @@ export function App() {
   const [postsPerPage, setPostsPerPage] = useState(4);
 
   // Functon to get query fot searching
-  function handleSetQuery(event) {
+  function handleSetQuery(event: ChangeEvent<HTMLInputElement>) {
     setQuery(event.target.value);
   }
 
@@ -28,7 +28,7 @@ export function App() {
   const currentPost = filteredPostList.slice(indexOfFirstPost, indexOfLastPost);
 
   // Change Page
-  function paginate(pageNumber) {
+  function paginate(pageNumber: any) {
     setCurrentPage(pageNumber);
   }
 
